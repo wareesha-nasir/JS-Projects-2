@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.click-btn{
+    padding: 0.25rem 0.5rem;
+    border: 3px solid rgb(248, 242, 242);
+    border-radius: 10%;
+    background-color: darkolivegreen;
+}
+button:hover{
+    transition: 1sec;
+}
+
+p{
+    font-family:'Dancing Script, cursive' ;
+    color: rgb(20, 19, 20);
+    text-transform: uppercase;
+    font-weight: bold;
+}
