@@ -1,0 +1,36 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);;
+    text-transform: capitalize;
+}
+h1{
+    font-family: 'Merriweather' ,serif;
+    color: #8b0a50;
+}
+button{
+    color:#8b0a50;
+    border: none;
+    background-color: beige;
+    font-size: 1.2rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 7px;
+}
+.container{
+    text-align: center;
+    background-color: burlywood;
+    padding: 2rem;
+    border-radius: 5px;
+    flex:0 0 70%;
+}
+h2{
+    font-family: 'Dancing Script',cursive;
+    padding: 0.5rem;
+    color: rgb(6, 128, 101);
+}
+h3{
+    font-family: 'Merriweather',serif;
+    color: rgb(180,5,5);
+}
