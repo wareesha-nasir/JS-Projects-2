@@ -1,0 +1,31 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.counter-box{
+    color:whitesmoke;
+    flex:0 0 50%;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid silver;
+    box-shadow: 3px 3px 10px 10px rgb(20, 20, 20);
+    padding: 1rem;
+}
+.counter{
+    font-size: 3rem;
+}
+button{
+border-radius: 8px;
+font-size: 2rem;
+text-transform: capitalize;
+border: 2px solid red;
+}
+
