@@ -17,6 +17,7 @@ function addCounter(){
     else if(count.innerHTML==='0'){
         count.style.color='white';
     }
+    count.animate([{opacity:'0.2'},{opacity:'1'}],{duration:500,fill:'forwards'})
 }
 
 
@@ -29,4 +30,5 @@ function lowerCounter(){
     else if(count.innerHTML==='0'){
         count.style.color='white'
     }
+    count.animate([{opacity:'0.2'},{opacity:'1'}],{duration:1000,fill:'forwards'})
 }
