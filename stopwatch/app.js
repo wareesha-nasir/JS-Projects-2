@@ -36,9 +36,12 @@ clearInterval(interval)
 }
 
 function resetTimer(){
-    mili.innerHTML= "0";
-    sec.innerHTML="0";
-    min.innerHTML="0";
+    ml=0;
+    s=0;
+    m=0;
+    mili.innerHTML= ml;
+    sec.innerHTML=s;
+    min.innerHTML=m;
     stopTimer();
     start.disabled=false
 }
