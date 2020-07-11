@@ -17,23 +17,61 @@ function heloo(a){
     Userlogin('adam');
     Userlogin('john');
     //HIGHER ORDER FUNCTION*/
-    function authenticate(verify){
+    function authenticate(person){
         let b=[];
-        for(i=0;i<verify;i++){
+        for(i=0;i<500000;i++){
             b.push(i);}
-            return true;
+            return grantaccess(person.name)
         }
+        function sing(person) {
+            console.log('la la la my name is ' + person.name) 
+          }
         const grantaccess=(n)=>
        console.log("access granted to "+ n) 
 
         
     function personlogin(fn,person){
         if(person.level==="admin"){
-            fn(500000)
+            return fn(person)
         }else if(person.level==="user"){
-            fn(100000)
+            return fn(person)
         }
-        return grantaccess(person.name)
+        
     }
     personlogin(authenticate,{level:"admin",name:"adam"})
     personlogin(authenticate,{level:"user",name:"tim"})
+    personlogin(sing,{level:"user",name:"tim"})
+//CALCULATOR WITH HIGER ORDER FUNCTION with different syntax
+
+function divide(a,b){
+    console.log("result is "+ a/b)
+}
+function multiply(a,b){
+    console.log("result is=" + a*b)
+}
+
+
+
+    function calculator(num1,num2,op,fn ){
+        if(op==="+"){
+             //add(num1,num2)
+            return function add(a,b){
+                let c=a+b;
+                console.log("result is "+ c)
+            }
+        }else if(op==="-"){
+           return  function sub(a,b){
+                let d=a-b
+                console.log("result is "+ d)
+            }
+              }
+              else if(op==="*"){
+                  return fn(num1,num2)
+                }
+                else if(op==="/"){
+                    return fn(num1,num2)
+                  }
+    }
+    calculator(4,5,"+")(4,5,"+")
+    calculator(7,5,"-")(7,5,"-")
+    calculator(9,3,"/",divide)
