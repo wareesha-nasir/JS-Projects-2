@@ -1,0 +1,45 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: url("bk.jpg");
+}
+.images{
+    background: antiquewhite;
+    flex: 0 0 80%;
+    min-height: 70vh;
+   background: url("4.png") center/cover no-repeat;
+   border-radius: 15px;
+   box-shadow: 5px 10px rgb(150, 238, 223);
+   position: relative;
+}
+button{
+    width: 5%;
+    height: 6vh;
+    border: none;
+background-color: transparent;
+border-radius: 80px;
+outline: none;
+}
+img{
+    width:30px
+}
+#next{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translate(40%,-50%);
+}
+#prev{
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translate(-40%,-40%);
+}
+button:active{
+    background-color: transparent;
+}
+button:hover{
+    background-color: rgb(190, 188, 190);
+}
