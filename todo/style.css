@@ -10,3 +10,6 @@ img{
     width:3%;
     height: 3%;
 }
+ul{
+    list-style: none;
+}
