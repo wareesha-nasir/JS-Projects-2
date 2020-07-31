@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <title>TODO APP</title>
 </head>
 <body>
@@ -12,10 +14,10 @@
         <span><img src="checklist.png"></span>
     </h1>
     </div>
-   <div>
+   <div >
        <input type="text" id="todo" placeholder="enter todo">
-       <button onclick="addtodo()">add item</button>
-       <button onclick="deletetodo()">delete all</button>
+       <button onclick="addtodo()" id="add"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+       <button onclick="deletetodo()" id="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
    </div> 
    <div>
        <ul id="list">

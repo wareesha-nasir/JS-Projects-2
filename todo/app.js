@@ -11,11 +11,13 @@ function addtodo(){
 
     var delbtn=document.createElement("button")
     var dt=document.createTextNode("delete");
+    delbtn.setAttribute("class","btn");
     delbtn.setAttribute("onclick","deleteItem(this)") // to get complete element use "this" this pass whole button 
     //with all attributes.
      delbtn.appendChild(dt);
 var edtbtn=document.createElement("button");
 var ed=document.createTextNode("edit");
+edtbtn.setAttribute("class","btn2")
 edtbtn.setAttribute("onclick","editItem(this)")
 edtbtn.appendChild(ed);
     li.appendChild(delbtn);

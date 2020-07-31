@@ -1,5 +1,5 @@
 body{
-     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+     background: linear-gradient(90deg, #d53369 0%, #51dac3 100%);
      font-family: Georgia, 'Times New Roman', Times, serif;
      padding: 0%;
      margin: 0%;
@@ -10,6 +10,53 @@ img{
     width:3%;
     height: 3%;
 }
+h1{
+    color:rgb(128, 0, 75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+input{
+    width:15%;
+    height: 15%;
+}
 ul{
     list-style: none;
+    text-align: center;
+    color: wheat;
+}
+#add{
+    border-radius: 50px;
+    background-color: #e0e6e5;
+    color:rgb(136, 2, 107);
+    border: none;
+    width: 3%;
+    height: 3%;
+    }
+    .btn2{
+        color:rgb(4, 160, 87);
+        background-color:#e0e6e5;
+        border-radius: 50px;
+        border: none;
+        text-transform: capitalize;
+        padding: 1%;
+        margin-left: 1%;
+        
+    }
+    .btn{
+        color:rgb(218, 10, 10);
+        background-color:#e0e6e5;
+        border-radius: 50px;
+        border: none;
+        text-transform: capitalize;
+        padding: 1%;
+        margin-left: 1.5%;
+    }
+    #delete{
+    border-radius: 50px;
+    background-color: #e0e6e5;
+    color:rgb(136, 2, 2);
+    border: none;
+    outline: none;
+    width: 3%;
+    height: 3%;
 }
