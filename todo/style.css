@@ -1,5 +1,5 @@
 body{
-     background: linear-gradient(90deg, #d53369 0%, #51dac3 100%);
+     background: linear-gradient(90deg, #97d533 0%, #51dac3 100%);
      font-family: Georgia, 'Times New Roman', Times, serif;
      padding: 0%;
      margin: 0%;
@@ -17,12 +17,14 @@ h1{
 }
 input{
     width:15%;
-    height: 15%;
+    height: 8vh;
 }
 ul{
     list-style: none;
     text-align: center;
-    color: wheat;
+    color: rgb(172, 9, 50);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 #add{
     border-radius: 50px;
@@ -31,6 +33,7 @@ ul{
     border: none;
     width: 3%;
     height: 3%;
+    padding: 1%;
     }
     .btn2{
         color:rgb(4, 160, 87);
@@ -40,7 +43,7 @@ ul{
         text-transform: capitalize;
         padding: 1%;
         margin-left: 1%;
-        
+        margin-bottom: 1%;
     }
     .btn{
         color:rgb(218, 10, 10);
@@ -50,6 +53,7 @@ ul{
         text-transform: capitalize;
         padding: 1%;
         margin-left: 1.5%;
+        margin-bottom: 1%;
     }
     #delete{
     border-radius: 50px;
@@ -59,4 +63,5 @@ ul{
     outline: none;
     width: 3%;
     height: 3%;
+    padding: 1%;
 }
