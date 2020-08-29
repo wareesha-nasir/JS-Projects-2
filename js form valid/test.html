@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form valid</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="name" placeholder=" name" value="" id="name">
+        <input type="email" name="email" placeholder="abc@gmail.com" value="" id="email">
+        <input type="password" name="password" id="pass">
+        <input type="submit" name="submit" id="submit" onclick="valid()">
+    </form>
+    <script src="script.js"></script>
+
+    <form name="myForm" onsubmit="return(Validation());">
+        <input type="text" name="Name" value="" />
+        <input type="text" name="Email" value="abc@gmail.com"/>
+         <input type="submit" value="SUBMIT"/>        
+            </form></body>
+        <script>
+        const myForm =document.getElementsByName("myForm")
+        const Name =document.getElementsByName("Name")
+        const Email =document.getElementsByName("Email")
+        
+        const Validation =() =>{
+        
+            if(document.myForm.Name.value == "")
+            {
+                alert("Please Provide Your Name");
+                document.myForm.Name.focus();
+                return false;
+            }
+            else if(document.myForm.Email.value == "")
+            {
+                alert("Please Provide Your Email ID");
+                document.myForm.Email.focus();
+                return false;
+            }
+            else{
+            alert("Thankyou")
+            }} </script>
+        
+</body>
+</html>
